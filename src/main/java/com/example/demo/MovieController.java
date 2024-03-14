@@ -9,7 +9,7 @@ public class MovieController {
     //CREANDO LA LISTA PARA TRAER EL ARRAY DE MOVIES
     private List<Movie> movies = new ArrayList<>();
     
-    //CREANDO EL CONSTRUCTOR PARA AGREGAR LAS PELICULAS
+    //CREANDO EL CONSTRUCTOR PARA AGREGAR LAS MOVIE
     public MovieController() {
         movies.add(new Movie(1, "Sueño de Fuga", "1994", "Drama", "Frank Darabont", "Dos hombres encarcelados"));
         movies.add(new Movie(2, "El Padrino", "1972", "Crimen", "Francis Ford Coppola", "El patriarca envejecido de una dinastía del crimen organizado transfiere el control de su imperio clandestino a su hijo reacio.")); 
@@ -24,7 +24,7 @@ public class MovieController {
         return movies;
     }
 
-    //CREANDO EL METODO GET PARA TRAER UN ESTUDIANTE POR ID
+    //CREANDO EL METODO GET PARA TRAER UNA MOVIE POR ID
     @GetMapping("/movie/{id}")
     public Movie getMovie(@PathVariable int id) {
         for (Movie Movie : movies) {

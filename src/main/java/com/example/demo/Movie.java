@@ -1,7 +1,7 @@
 package com.example.demo;
 
 public class Movie {
-        //CREANDO LOS ATRIBUTOS DE LA CLASE STUDENT
+        //CREANDO LOS ATRIBUTOS DE LA CLASE Movie
         private int id;
         private String titulo;
         private String año;
@@ -9,7 +9,7 @@ public class Movie {
         private String director;
         private String sinopsis;
     
-        //CREANDO EL CONSTRUCTOR DE LA CLASE STUDENT
+        //CREANDO EL CONSTRUCTOR DE LA CLASE Movie
         public Movie(int id, String titulo, String año, String genero, String director, String sinopsis) {
             this.id = id;
             this.titulo = titulo;
@@ -19,7 +19,7 @@ public class Movie {
             this.sinopsis = sinopsis;
         }
         
-        //CREANDO LOS METODOS GET PARA TRAER LOS ATRIBUTOS DE LA CLASE STUDENT
+        //CREANDO LOS METODOS GET PARA TRAER LOS ATRIBUTOS DE LA CLASE Movie
         public int getId() {
             return id;
         }
